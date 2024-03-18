@@ -1,0 +1,60 @@
+.service-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  flex-direction: column;
+}
+
+.service-content h1, .service-content p{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 2rem;
+  margin: 50px;
+}
+
+.interior-design, .arch-design, .concept-design{
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  align-items: center;
+  height: 180px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
+  transition: all 0.3s ease 0s;
+}
+
+.interior-design a, .arch-design a, .concept-design a{
+  text-align: center;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  line-height: 1.2em;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.interior-design:hover, .arch-design:hover, .concept-design:hover{
+  background-color: #04091e;
+  border-color: #04091e;
+}
+
+.interior-design:hover h4, .arch-design:hover h4, .concept-design:hover h4{
+  color: #c6b069;
+}
+
+.interior-design p, .arch-design p, .concept-design p{
+  text-align: center;
+  text-decoration: none;
+  color: #777;
+}

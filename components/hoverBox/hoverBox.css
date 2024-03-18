@@ -1,0 +1,52 @@
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-overlay {
+  position: absolute;
+  background-color: rgba(55, 54, 66, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 93%;
+  height: 90%;
+  border: 1px solid #c6b069;
+}
+
+.image-container:hover .text-overlay {
+  opacity: 1;
+}
+
+.hover-content {
+  text-align: center;
+  width: 80%;
+}
+
+.hover-content h3 {
+  border-bottom: 1px solid #c6b069;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  padding: 20px 0px;
+}
+
+.hover-content button {
+  align-self: center;
+  background-color: #c6b069;
+  border-radius: 0;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 30px;
+}
