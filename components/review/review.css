@@ -1,0 +1,44 @@
+.testimonial {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  display: flex;
+  gap: 1.8rem;
+  margin-right: 1rem;
+  padding: 25px 30px 25px 30px;
+}
+
+.testimonial-content p {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  font-weight: 300 !important;
+  line-height: 1.625em;
+}
+
+.testimonial-content h4{
+  margin: 5px 0px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.testimonial-content h4:hover{
+  transition: all 0.3s ease 0s;
+  color: #c6b069;
+}
+
+.testimonial-image img {
+  width: 50px;
+}
+
+.rating{
+  display: flex;
+  gap: 0.15rem;
+}
+
+
+@media (max-width: 950px) {
+
+  .testimonial-content p {
+    font-size: 14px;
+  }
+  
+}

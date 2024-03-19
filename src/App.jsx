@@ -1,6 +1,7 @@
 import Features from "./features/features"
 import Header from "./header/header"
 import Home from "./home/home"
+import ReviewSection from "./reviews/reviews"
 import Services from "./services/services"
 import Work from "./work/work"
 
@@ -13,6 +14,7 @@ function App() {
       <Services />
       <Work />
       <Features />
+      <ReviewSection />
     </>
   )
 }
