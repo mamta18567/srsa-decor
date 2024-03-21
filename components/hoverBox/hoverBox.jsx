@@ -18,7 +18,9 @@ const HoverBox = ({ imageSrc, altText, heading }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img src={imageSrc} alt={altText} />
+      <div className="image">
+        <img className="interior-image" src={imageSrc} alt={altText} />
+      </div>
       {hovering && (
         <div className="text-overlay">
           <div className="hover-content">

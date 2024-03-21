@@ -1,7 +1,7 @@
 .feature-card {
   background-color: white;
   padding: 32px;
-  max-width: 27%;
+  max-width: 32%;
   height: 172px;
   transition: all 0.3s ease 0s;
   border-radius: 10px;
@@ -15,21 +15,50 @@
   font-size: 18px;
 }
 
-
 .text {
   margin-top: 15px;
   line-height: 1.62em;
 }
 
-.feature-card:hover{
+.feature-card:hover {
   background-color: #04091e;
   border-color: #04091e;
 }
 
-.feature-card:hover .heading{
+.feature-card:hover .heading {
   color: #c6b069 !important;
 }
-.feature-card:hover .heading>h4{
+
+.feature-card:hover .heading>h4 {
   color: #c6b069 !important;
 }
+
+@media (max-width: 1200px) {
+  .feature-card {
+    padding: 20px;
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .feature-card{
+    padding: 32px;
+    max-width: 32%;
+  }
+}
+
+@media (max-width: 964px) {
+  .feature-card{
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 650px) {
+  .feature-card{
+    max-width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+}
+
 

@@ -1,60 +1,115 @@
-.service-container{
+.service-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 100vh;
   flex-direction: column;
 }
 
-.service-content h1, .service-content p{
+.service-content{
+  margin-bottom: 2rem;
+}
+
+.service-content h1,
+.service-content p {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  max-width: 75%;
   gap: 2rem;
-  margin: 50px;
 }
 
-.interior-design, .arch-design, .concept-design{
+.interior-design{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/srsawebsite/MODULERKITCHEN/FB_IMG_1674677509324.jpg) 100% center;
+  height: 100%;
+  background-size: cover;
+}
+
+.arch-design{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/srsawebsite/WARDROBE/FB_IMG_1641641476632.jpg) 100% center;
+  background-size: cover;
+  height: 100%;
+}
+
+.concept-design{
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/srsawebsite/BED/Selected/FB_IMG_1668948185540.jpg) 100% center;
+  background-size: cover;
+  height: 100%;
+}
+
+.interior-design h4,
+.arch-design h4,
+.concept-design h4{
+  color: #fff;
+}
+
+.interior-design,
+.arch-design,
+.concept-design {
   display: flex;
   flex-direction: column;
   padding: 25px;
   border: 1px solid #eee;
   border-radius: 10px;
   align-items: center;
-  height: 180px;
+  height: 200px;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.625em;
   transition: all 0.3s ease 0s;
 }
 
-.interior-design a, .arch-design a, .concept-design a{
+.interior-design a,
+.arch-design a,
+.concept-design a {
   text-align: center;
   text-decoration: none;
-  color: #222;
   font-weight: 600;
+  color: #fff;
   line-height: 1.2em;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-.interior-design:hover, .arch-design:hover, .concept-design:hover{
-  background-color: #04091e;
-  border-color: #04091e;
-}
-
-.interior-design:hover h4, .arch-design:hover h4, .concept-design:hover h4{
-  color: #c6b069;
-}
-
-.interior-design p, .arch-design p, .concept-design p{
+.interior-design p,
+.arch-design p,
+.concept-design p {
   text-align: center;
   text-decoration: none;
-  color: #777;
+  color: white;
+}
+
+
+@media (max-width: 1024px) {
+
+  .container {
+    max-width: 90%;
+  }
+
+  .interior-design,
+  .arch-design,
+  .concept-design{
+    height: auto;
+  }
+
+}
+
+@media (max-width: 860px) {
+  .container{
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .service-container{
+    margin-top: 50px;
+  }
+
+  .service-content{
+    max-width: 90%;
+  }
 }

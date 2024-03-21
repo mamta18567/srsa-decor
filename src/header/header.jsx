@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faDribbble, faBehance } from '@fortawesome/free-brands-svg-icons';
 import { faAngleDown as faAngleDownSolid } from '@fortawesome/free-solid-svg-icons';
-import NavMenu from "../../components/nav-menu/navMenu";
+import NavMenu from "../../components/nav-menu/navMenu"
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -28,13 +28,16 @@ const Header = () => {
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
-    <NavMenu />
   };
 
   return (
     <>
       <div>
         <div className={`header ${scrolling ? 'scrolled' : ''}`}>
+          {showMenu ? (<NavMenu
+            setShowMenu={setShowMenu}
+          />):
+          <>
           <div className="header-top">
             <div className="top-left">
               <a href="tel:+953 012 3654 896">+953 012 3654 896</a>
@@ -102,6 +105,8 @@ const Header = () => {
               <li><a href="">Contact</a></li>
             </ul>
           </div>
+          </>
+          }
         </div>
       </div>
     </>

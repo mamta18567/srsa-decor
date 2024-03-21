@@ -1,0 +1,33 @@
+.brands-container {
+  margin: auto;
+  padding: 60px 0px;
+  background-color: #f9f9ff
+}
+
+.brands {
+  padding: 40px;
+  width: 75%;
+  margin: auto;
+}
+
+.brand {
+  opacity: 0.35;
+  text-decoration: none;
+  outline: 0;
+  padding: 10px;
+}
+
+.brand img{
+  margin: auto;
+}
+
+.brand:hover{
+  opacity: 2;
+  transition: all ease-in 0.3s;
+}
+
+@media (max-width:1024px) {
+  .brands{
+    width: 90%;
+  }
+}
